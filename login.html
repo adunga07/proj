@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/custom.css">
+    <title>Login - Coffee Shop</title>
+</head>
+<body>
+
+    <nav>
+        <img src="./assets/images/app-logo.png" >
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="orders.html">Orders</a></li>
+
+            <li id="authLink"></li>
+        </ul>
+    </nav>
+
+    <div class="loginDiv">
+        <h1>Login to Coffee Shop</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        
+    </div>
+
+    <footer>
+        <span>&copy; <span id="currentYear"></span> Coffee Shop. All rights reserved.</span>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/scripts/auth.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+    
+</body>
+</html>
